@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class=" flexItem">
+      <h1>Find out how many other places share the same name as your city </h1>
+
+    </div>
+    <!-- Enter the city : -->
+    <div class="flexItem divForm">
+      <form action="/getCiyNames" method="POST">
+        <label for="fname">City Name &nbsp: </label>
+        <br><br>
+        <input type="text" name="cityName" required><br><br>
+        <label for="lname">State Name: </label>
+        <br><br>
+        <input type="text" name="stateName"><br><br>
+        <label for="lname">Country &nbsp&nbsp&nbsp&nbsp&nbsp:</label>
+        <br><br>
+        <input type="text" name="country"><br><br>
+        <br><br>
+        <input type="submit" id="btn" value="Submit">
+      </form>
+    </div>
+
+    <div class="flexItem outputDisplay">
+      <!-- <h1>Other states where this city name exists : </h1> -->
+      <hr>
+
+      <ul>
+        <% if (locals.content.length> 0 ){ %>
+          <h1>Other states where this city name exists : </h1>
+          <h1>
+            <!-- City : <%= content[0].name %> -->
+          </h1>
+          <% for (let i=0; i < content.length; i++){%>
+            <li>
+              <% let loc="location : " ; loc +=content[i].name; if (content[i].state && content[i].state!=="" ) { loc
+                +=", " + content[i].state +" , "+ content[i].country; 
+            }
+            else {
+              loc += " , " + content[i].country; 
+            }
+            
+            %>
+            <h2> <%= loc %> </h2>
+
+
+          </li>
+          <hr>
+          <% } } else { %>
+            <h2 style =" color : red"> No known location to this API were found! Try with a different spelling or city.
+                </h2>
+                <% } %>
+      </ul>
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+</body>
+
+</html>

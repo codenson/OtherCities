@@ -1,0 +1,56 @@
+html{
+   
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10;
+  font-style: normal;
+}
+h1{
+    color: rgb(34, 142, 237);
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+     margin-top:  2rem;
+     /* margin-left: 20%;  */
+     align-items: center;
+    text-align: center;
+}
+.flexItem{
+    flex : 1; 
+  /* margin-left: 25%;  */
+  
+}
+.divForm{
+    /* margin-left: 25%; */
+}
+.artlForm{
+    
+    position: relative;
+    /* margin-left: 40%; */
+    margin-top:  2%;
+}
+input {
+    width: 400px;
+    height: 10vh;
+}
+#btn{
+   /* //  margin-left: 10%;  */
+    width: 400px;
+    
+}
+.outputDisplay{
+
+    text-align:left;
+}
+@media (max-width: 400px) {
+    
+/* input  {
+    height : 1vh; 
+     width: 100px;
+
+} */
+    
+}
