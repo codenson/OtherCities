@@ -9,5 +9,6 @@ Technologies used in this project include nodejs and ejs.
 
 ![screenshot1](https://github.com/user-attachments/assets/6b94e99e-82e7-4c1a-b8b9-144834a0b7cd)
 
+![Screenshot (145)](https://github.com/user-attachments/assets/776b8f8f-28e5-4d5d-885e-af378489417c)
 
  
