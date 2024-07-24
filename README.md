@@ -7,7 +7,7 @@ Technologies used in this project include nodejs and ejs.
 	Nodejs: used express js, middleware and created endpoints to handle user's request. Used Rest api to fetch data from openWeatherMap. 
 	EJS: used to dynamically print the data fetched from openWeatherMap api. 
 
-	![alt text](<Screenshot (144).png>)
+	![Logo](images/screenshot1.png)
 
 
  
